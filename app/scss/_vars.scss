@@ -1,0 +1,29 @@
+$white: #fff;
+$black: #000;
+$text: #242121;
+$titleMain: #0d302c;
+$subtitle: #01353e;
+$green: #00b2a0;
+$bgSection: #f8f8f8;
+$gray: #c4c4c4;
+$grayDark: #373a39;
+$grayLight: #dadada;
+$grayGradient: #242121;
+
+@mixin r600 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@mixin r700 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin posImg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
