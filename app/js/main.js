@@ -23,20 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const galleryItemVisible = document.querySelectorAll(".gallery__item--pos");
         galleryItemVisible.forEach(item => {
             item.classList.remove("gallery__item--pos");
-            console.log("text")
         });
-        console.log("text")
+        lightGallery(document.getElementById('lightgallery'));
         btnGallery.classList.add("gallery__btn--fadeOff");
-    })
+    });
     //video button
     btnVideo.addEventListener("click", () => {
         imgVideo.classList.add("video__img--fadeOff");
         boxVideo.classList.add("video__box--active");
-    })
-    //plugin galery
-    lightGallery(document.getElementById('lightgallery'), {
-        thumbnail: true
     });
+    //plugin galery
+    lightGallery(document.getElementById('lightgallery'));
     //swiper
     const swiper = new Swiper('.swiper-container', {
         speed: 400,
